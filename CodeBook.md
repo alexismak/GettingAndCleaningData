@@ -57,21 +57,14 @@ The data-set includes the following:
 - selectedColumns uses only clMeanStd, "Activity" and "Subject"
 - selectedData extracts only data based on selectedColumns
 
-- activity column
+- Activity column in selectedData is updated with descriptive activity names to name the activities in the dataset
 
-   
-    
-    
-   
-    
-    
-    
+- variable names in selectedData are renamed and acronyms are replaced with descriptive names 
 
-    Indices of columns that contain std or mean, activity and subject are taken into requiredColumns .
-    extractedData is created with data from columns in requiredColumns.
-    Activity column in extractedData is updated with descriptive names of activities taken from activityLabels. Activity column is expressed as a factor variable.
-    Acronyms in variable names in extractedData, like 'Acc', 'Gyro', 'Mag', 't' and 'f' are replaced with descriptive labels such as 'Accelerometer', 'Gyroscpoe', 'Magnitude', 'Time' and 'Frequency'.
-    tidyData is created as a set with average for each activity and subject of extractedData. Entries in tidyData are ordered based on activity and subject.
-    Finally, the data in tidyData is written into Tidy.txt.
+- Activity and Subject columns are expressed as factor variables
+- tidyData is created with average for each activity and subject 
+- tidyData is written into tidyData.txt
+
+
 
 
